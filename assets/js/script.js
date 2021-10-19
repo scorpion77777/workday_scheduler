@@ -32,7 +32,6 @@ function init() {
 }
 
 function storeTodos() {
-  // Stringify and set key in localStorage to todos array
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
