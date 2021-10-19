@@ -3,7 +3,6 @@ var timeDisplayEl = $("#time-display");
 var todoInput = document.querySelector("#todo-text");
 var todoForm = document.querySelector("#todo-form");
 var saveButton = document.querySelector("#submit");
-var todoCountSpan = document.querySelector("#todo-count");
 
 var todos = [];
 
