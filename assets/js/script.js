@@ -14,8 +14,8 @@ function displayTime() {
 setInterval(displayTime, 1000);
 
 function renderTodos() {
-  todoList.innerHTML = "";
-  todoCountSpan.textContent = todos.length;
+  todoList.text = "";
+  todoInput.textContent = todos.length;
 }
 
 function init() {
@@ -35,8 +35,8 @@ function storeTodos() {
 }
 
 // Add click event to todoList element
-saveButton.addEventListener.on("click", function () {
-  storeTodos();
+saveButton.addEventListener.on("click", function (event) {
+  var event = storeTodos();
   renderTodos();
 });
 
