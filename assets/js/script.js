@@ -35,11 +35,7 @@ function storeTodos() {
 }
 
 // Add click event to todoList element
-saveButton.addEventListener.on("click", function (event) {
-  var input = todoInput.value;
-  console.log(input);
-  saveButton.text(input);
-
+saveButton.addEventListener.on("click", function () {
   storeTodos();
   renderTodos();
 });
