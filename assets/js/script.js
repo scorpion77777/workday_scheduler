@@ -14,13 +14,10 @@ function displayTime() {
 }
 setInterval(displayTime, 1000);
 
-
 function renderTodos() {
-  // Clear todoList element and update todoCountSpan
   todoList.innerHTML = "";
   todoCountSpan.textContent = todos.length;
 }
-
 
 function init() {
   // Get stored todos from localStorage
@@ -31,7 +28,6 @@ function init() {
     todos = storedTodos;
   }
 
-  
   renderTodos();
 }
 
@@ -40,34 +36,14 @@ function storeTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-// Add submit event to form
-todoForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  var todoText = todoInput.value.trim();
-
-  // Return from function early if submitted todoText is blank
-  if (todoText === "") {
-    return;
-  }
-
-  // Add new todoText to todos array, clear the input
-  todos.push(todoText);
-  todoInput.value = "";
-
-  // Store updated todos in localStorage, re-render the list
-  storeTodos();
-  //renderTodos();
-});
-
 // Add click event to todoList element
-saveButton.addEventListener("click", function (event) {
-  var element = event.target;
+saveButton.addEventListener.on("click", function (event) {
+  var input = todoInput.value;
+  console.log(input);
+  saveButton.text(input);
 
-  
-    storeTodos();
-    renderTodos();
-  }
+  storeTodos();
+  renderTodos();
 });
 
 // Calls init to retrieve data and render it to the page on load
