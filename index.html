@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <!-- Display time -->
+  <header class="jumbotron jumbotron-fluid custom-jumbotron">
+    <div class="container text-center">
+      <h2>Work Day Scheduler</h2>
+      <p>A simple calendar app for scheduling your work day <br /> <span id="time-display">00:00:00</span>
+      </p>
+    </div>
+  </header>
+
+  <!-- To Do Form-->
+
+  <form id="todo-form" method="POST">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="todo-text" placeholder="Event that already happend at 9am"
+        aria-describedby="button-addon2">
+      <button class="btn btn-outline-primary" type="button" id="submit">Save</button>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Event that already happend at 12am" id="todo-past"
+        aria-describedby="button-addon2">
+      <button class="btn btn-outline-primary" type="button" id="submit">Save</button>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="In Progress ..." id="todo-now"
+        aria-describedby="button-addon2">
+      <button class="btn btn-outline-primary" type="button" id="submit">Save</button>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Work shuld be done by 5:00pm" id="todo-text"
+        aria-describedby="button-addon2">
+      <button class="btn btn-outline-danger" type="button" id="submit">Save</button>
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="./assets/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
