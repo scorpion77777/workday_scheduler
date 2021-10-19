@@ -14,14 +14,14 @@ function displayTime() {
 }
 setInterval(displayTime, 1000);
 
-// The following function renders items in a todo list as <li> elements
+
 function renderTodos() {
   // Clear todoList element and update todoCountSpan
   todoList.innerHTML = "";
   todoCountSpan.textContent = todos.length;
 }
 
-// This function is being called below and will run when the page loads.
+
 function init() {
   // Get stored todos from localStorage
   var storedTodos = JSON.parse(localStorage.getItem("todos"));
@@ -31,7 +31,7 @@ function init() {
     todos = storedTodos;
   }
 
-  // This is a helper function that will render todos to the DOM
+  
   renderTodos();
 }
 
@@ -64,13 +64,7 @@ todoForm.addEventListener("submit", function (event) {
 saveButton.addEventListener("click", function (event) {
   var element = event.target;
 
-  // Checks if element is a button
-  //if (element.matches("button") === true) {
-    // Get its data-index value and remove the todo element from the list
-   // var index = element.parentElement.getAttribute("data-index");
-   // todos.splice(index, 1);
-
-    // Store updated todos in localStorage, re-render the list
+  
     storeTodos();
     renderTodos();
   }
