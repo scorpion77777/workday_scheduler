@@ -27,17 +27,7 @@ h6 {
   font-weight: 700;
 }
 
-thead {
-  background-color: var(--red);
-  color: var(--light);
-  font-weight: 700;
-}
-
-.custom-jumbotron,
-.custom-card .card-header,
-.custom-card .card-footer,
-.custom-modal .modal-header,
-.custom-modal .modal-footer {
+.custom-jumbotron {
   background-color: var(--darkgreen);
   color: var(--light);
 }
